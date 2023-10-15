@@ -31,6 +31,7 @@ export default {
         '600': '600px',
 
       },
+
       colors: {
         colorbeige: '#FFB6360D',
         colorblue: '#483D8B',

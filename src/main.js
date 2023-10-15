@@ -20,6 +20,7 @@ import AlternativeDetail from "./components/AlternativeDetail.vue";
 import alternative from './page/Alternatives.vue'
 import ConseilsGIR from './page/ConseilsGIR.vue'
 import GestionEcologique from './page/GestionEcologique.vue'
+import BaseComplete from './page/Base.vue'
 import { createWebHistory, createRouter } from "vue-router";
 
 
@@ -79,7 +80,12 @@ const routes = [
         path: "/GestionEcologique",
         name: "GestionEcologique",
         component: GestionEcologique
-    }
+    },
+    {
+        path: "/BaseComplete",
+        name: "BaseComplete",
+        component: BaseComplete
+    },
 
 
 ];

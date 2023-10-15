@@ -1,5 +1,5 @@
 <template>
-    <header class="bg-gray-800 text-white py-4 p-8">
+    <header class="bg-gray-800 text-white py-4 p-8 ">
         <div class="container mx-auto flex justify-between items-center">
             <div class="text-xl font-semibold">BioGuardian</div>
             <!-- Bouton de menu mobile avec icône -->
@@ -7,7 +7,8 @@
                 <font-awesome-icon icon="coffee" />
             </button>
             <!-- Liste déroulante en version mobile -->
-            <select v-if="mobileNavOpen" class="md:hidden bg-gray-800 text-white py-2" @change="navigateMobile">
+            <select v-if="mobileNavOpen" class="md:hidden bg-gray-800 text-white py-2 absolute top-0 left-0"
+                @change="navigateMobile">
                 <router-link :to="{ name: 'Accueil' }">
                     <a href="#" class="text-white hover:text-yellow-400 mr-4">Accueil</a>
                 </router-link>
@@ -63,6 +64,14 @@ export default {
                 window.location.href = selectedPage;
             }
         },
+    },
+    mounted() {
+        // Écoutez l'événement de défilement pour appliquer la classe en fonction de la position de défilement
+        window.addEventListener("scroll", this.handleScroll);
+    },
+    destroyed() {
+        // Retirez l'écouteur d'événement lors de la destruction du composant
+        window.removeEventListener("scroll", this.handleScroll);
     },
 };
 </script>

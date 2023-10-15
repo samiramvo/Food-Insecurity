@@ -1,5 +1,6 @@
+<Header></Header>
 <template>
-    <div>
+    <div class="relative">
         <Header></Header>
         <div class="relative">
             <img src="@/assets/agriculture-chine.jpg" alt="" class="w-full h-450">
@@ -23,33 +24,41 @@
             <div class="flex justify-center items-center  flex-col md:flex-row p-10">
 
                 <img src="@/assets/AdobeStock_368293717-1200x526.jpeg" class=" rounded-lg w-1/2 h-350" alt="">
+
                 <div class=" pl-10">
                     <p class="text-center font-semibold text-lg mt-2 mb-2">Gestion Écologique :</p>
                     <div class=" leading-loose">
                         <p>
-                            Réduction de l'Impact Environnemental : BioGuardian permet aux agriculteurs de minimiser leur
+                            Réduction de l'Impact Environnemental : BioGuardian permet aux agriculteurs de minimiser
+                            leur
                             impact
                             sur
-                            l'environnement en réduisant l'utilisation de pesticides chimiques dangereux pour la faune, la
+                            l'environnement en réduisant l'utilisation de pesticides chimiques dangereux pour la faune,
+                            la
                             flore
                             et
                             les écosystèmes.
                         </p>
                         <p class="mt-4">
-                            Protection de la Biodiversité : En favorisant des pratiques agricoles plus respectueuses de la
-                            biodiversité, BioGuardian contribue à préserver les populations d'insectes utiles et d'animaux
+                            Protection de la Biodiversité : En favorisant des pratiques agricoles plus respectueuses de
+                            la
+                            biodiversité, BioGuardian contribue à préserver les populations d'insectes utiles et
+                            d'animaux
                             sauvages.
                         </p>
                         <div class=" mt-4">
-                            <button
-                                class=" bg-yellow-400  w-150 h-40 text-white rounded-full font-bold hover:bg-yellow-500">
-                                Voir plus
-                            </button>
+                            <router-link :to="{ name: 'GestionEcologique' }">
+                                <button
+                                    class=" bg-yellow-400  w-150 h-40 text-white rounded-full font-bold hover:bg-yellow-500">
+                                    Voir plus
+                                </button>
+                            </router-link>
                         </div>
                     </div>
 
 
                 </div>
+
             </div>
             <div class="flex justify-center items-center  flex-col md:flex-row p-10">
 
@@ -85,6 +94,7 @@
 
             <div class="flex justify-center items-center  flex-col md:flex-row p-10">
                 <img src="@/assets/pesticides-augmentation-france.webp" class=" rounded-lg w-1/2 h-350" alt="">
+
                 <div class=" pl-10">
                     <p class="text-center font-semibold text-lg mt-2 mb-2">Base de Données Complète :</p>
                     <div class=" leading-loose">
@@ -93,27 +103,30 @@
 
                             Connaissance Approfondie des Pesticides : Les agriculteurs ont accès à une base de données
                             complète
-                            de pesticides, y compris leurs propriétés, effets sur la santé et l'environnement, ce qui leur
+                            de pesticides, y compris leurs propriétés, effets sur la santé et l'environnement, ce qui
+                            leur
                             permet de faire des choix informés.
 
 
                         </p>
                         <p class="mt-4">
-                            Sélection Précise : Les agriculteurs peuvent choisir le pesticide le plus approprié en fonction
+                            Sélection Précise : Les agriculteurs peuvent choisir le pesticide le plus approprié en
+                            fonction
                             de
                             leur culture spécifique, de la gravité de l'infestation et des réglementations locales.
                         </p>
                         <div class=" mt-4">
-                            <button
-                                class=" bg-yellow-400  w-150 h-40 text-white rounded-full font-bold hover:bg-yellow-500">
-                                Voir plus
-                            </button>
+                            <router-link :to="{ name: 'BaseComplete' }">
+                                <button
+                                    class=" bg-yellow-400  w-150 h-40 text-white rounded-full font-bold hover:bg-yellow-500">
+                                    Voir plus
+                                </button>
+                            </router-link>
                         </div>
                     </div>
 
 
                 </div>
-
 
             </div>
             <div class="flex justify-center items-center  flex-col md:flex-row p-10">
@@ -131,10 +144,12 @@
                             rendements en minimisant les pertes dues aux ravageurs.
                         </p>
                         <div class=" mt-4">
-                            <button
-                                class=" bg-yellow-400  w-150 h-40 text-white rounded-full font-bold hover:bg-yellow-500">
-                                Voir plus
-                            </button>
+                            <router-link :to="{ name: 'ConseilsGIR' }">
+                                <button
+                                    class=" bg-yellow-400  w-150 h-40 text-white rounded-full font-bold hover:bg-yellow-500">
+                                    Voir plus
+                                </button>
+                            </router-link>
                         </div>
                     </div>
 
